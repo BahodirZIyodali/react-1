@@ -1,13 +1,388 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.container{
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* ======= HEADER ======= */
+header{
+    width: 100%;
+    background: #008F76;
+}
+nav{
+     display: flex;
+     justify-content: space-between;
+    align-items: center;
+    height: 120px;
+   
+}
+ul{
+    display: flex;
+    margin-left: 100px;
+    gap: 100px;
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    color: #FFFFFF;
+    font-weight: 500;
+font-size: 16px;
+}
+ul li a:hover{
+    transition: all 0.4s ease-in-out;
+    color: #212121;
+}
+.abtn{
+    font-weight: 500;
+font-size: 16px;
+color: #FFFFFF;
+padding: 10px 24px;
+border: 1px solid #FFFFFF;
+filter: drop-shadow(0px 100px 80px rgba(0, 0, 0, 0.03)) drop-shadow(0px 12.5216px 10.0172px rgba(0, 0, 0, 0.015));
+border-radius: 10px;
+}
+.abtn:hover{
+    transition: all 0.5s ease-in-out;
+    border: 1px solid #FFFFFF;
+    background-color: #56b7a7;
+    color: #fff;
+}
+
+/* ======= INTRO ========== */
+.intro_wrap{
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    flex-direction:column;
+    justify-content: center;
+}
+.intro_wrap p{
+    font-family: 'Gentium Basic';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+color: #008F76;
+}
+.intro_wrap p span{
+    color: #212121;
+}
+h1{
+    font-weight: 500;
+font-size: 50px;
+line-height: 200%;
+color: #212121;
+margin-bottom: 40px;
+}
+h1 span{
+    color:#008F76;
+}
+.btns{
+    display: flex;
+    gap: 70px;    
+}
+.btns button:nth-child(1){
+    background-image: url(./img/search.svg);
+    background-repeat: no-repeat;
+background-position: 150px 15px;
+ padding: 10px  58px 10px 24px ;
+border:#008F76;
+background-color: #008F76;
+border-radius: 20px;
+font-weight: 500;
+font-size: 16px;
+color: #FFFFFF;
+}
+.btns button:nth-child(2){
+    width: 251px;
+height: 52px;
+border: 1px solid #008F76;
+border-radius: 20px;
+font-weight: 500;
+font-size: 16px;
+color: #008F76;
+background-color: #fff;
+background-image: url(./img/danete.svg);
+background-repeat: no-repeat;
+background-position: 210px 11px;
+}
+
+/*  ======= POST ======== */
+.post_wrap {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 100px;
+}
+.post_wrap h2{
+    text-align: center;
+    font-weight: 500;
+font-size: 24px;
+color: #212121;
+margin-bottom: 50px;
+}
+.post_wrap h2 span{
+    color:#008F76;
+}
+.post_cards{
+    display: flex;
+    gap: 39px;
+}
+.post_card {
+width: 596px;
+height: 228px;
+background: #FFFFFF;
+box-shadow: 0px 22.3363px 17.869px rgba(0, 0, 0, 0.0417275), 0px 12.5216px 10.0172px rgba(0, 0, 0, 0.035), 0px 6.6501px 5.32008px rgba(0, 0, 0, 0.0282725), 0px 2.76726px 2.21381px rgba(0, 0, 0, 0.0196802);
+border-radius: 5px;
+}
+.post_card:hover{
+ box-shadow:0 1px 1px 1px rgba(0, 0, 0, 0.22)
+}
+.post_card p{
+    padding: 30px 30px 44px;
+}
+.post_img img{
+    padding: 0 402px 0 114px ;
+}
+.post_content  {
+ margin-top: -70px;
+ margin-left: 210px;
+}
+.post_content  strong {
+    font-weight: 500;
+font-size: 16px;
+}.post_content  h5{
+margin-top: 5px;
+font-weight: 400;
+font-size: 16px;
+color: #949494;
+}
+
+/*  ====  RANK ===== */
+.ranks{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 150px;
+}
+.rank{
+    display: flex;
+    gap:16px;
+}
+.rank_text h4{
+    font-weight: 600;
+    font-size: 32px;
+    color: #212121;    
+}
+.rank_text p{
+font-weight: 400;
+font-size: 16px;
+color: #949494;
+}
+
+
+/*   ======= Selengkapnya ======== */
+
+.Selengkapnya h2 { 
+    font-weight: 500;
+font-size: 24px;
+color: #212121;
+}
+.Selengkapnya span{
+    font-weight: 400;
+font-size: 16px;
+margin-left: 1000px;
+color: #949494;
+}
+.Selengkapnya p{
+    margin-top: 10px;
+    font-weight: 400;
+font-size: 16px;
+color: #949494;
+}
+.Selengkapnya_cards{
+    display: flex;
+    gap:50px;
+}
+.Selengkapnya_card{
+    margin-top: 25px;
+    width: 596px;
+height: 280.98px;
+background: #FFFFFF;
+border: 1px solid #D9D9D9;
+border-radius: 5px;
+}
+.Selengkapnya_card:hover{
+    box-shadow: 0px 22.3363px 17.869px rgba(0, 0, 0, 0.0417275), 0px 12.5216px 10.0172px rgba(0, 0, 0, 0.035), 0px 6.6501px 5.32008px rgba(0, 0, 0, 0.0282725), 0px 2.76726px 2.21381px rgba(0, 0, 0, 0.0196802);
+}
+.Selengkapnya_card p{
+    padding: 30px 30px 0;
+    font-weight: 400;
+font-size: 16px;
+color: #212121;
+}
+.Selengkapnya_card img{
+    position: relative;
+    top: 40px;
+    left: 30px;
+    font-weight: 500;
+font-size: 16px;
+color: #212121;
+}
+.Selengkapnya_card strong {
+position: relative;
+top: -10px;
+left: 40px;
+}
+.Selengkapnya_card h5{
+position: relative;
+left: 120px;
+font-weight: 400;
+font-size: 16px;
+color: #949494;
+}
+.srcl{
+    margin-top: 72px;
+text-align: center;
+margin-bottom: 100px;
+}
+/*  ==== CARD ===== */
+.card-main h2{
+    margin-top: 100px;
+    font-weight: 500;
+    font-size: 24px;
+    color: #212121;
+}
+.card-main span{
+    margin-left: 1000px;
+font-weight: 400;
+font-size: 16px;
+text-align: right;
+color: #949494;
+}
+.card-main p{
+    margin-top: 8px;
+    font-weight: 400;
+font-size: 16px;
+color: #949494;
+margin-bottom: 25px;
+}
+.cards{
+    display: flex;
+    gap: 48px;
+    margin-bottom: 93px;
+}
+/*  ==== CONTACT===== */
+.contact{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.contact h2{
+    font-weight: 500;
+font-size: 28px;
+line-height: 200%;
+color: #212121;
+}
+.contact h2 span{
+    color: #008F76;
+}
+.contact p{
+    font-weight: 400;
+font-size: 20px;
+color: #949494;
+margin-bottom: 50px;
+
+}
+.btnss{
+display: block;   
+}
+.btnss button:nth-child(1){
+    width: 251px;
+height: 52px;
+border: 1px solid #008F76;
+border-radius: 20px;
+font-weight: 500;
+font-size: 16px;
+color: #fff;
+background-color: #008F76;
+background-image: url(./img/donate2.svg);
+background-repeat: no-repeat;
+background-position: 210px 6px;
+margin-bottom: 25px;
+}
+.contact span{
+    font-weight: 400;
+font-size: 20px;
+color: #949494;
+}
+.hu{
+    width: 262px;
+    height: 68px;    
+    border: 1px solid #008F76;
+    border-radius: 20px;
+    background-color: #fff;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 200%;    
+    color: #008F76;
+background-image: url(./img/whatsapp.svg);
+background-repeat: no-repeat;
+background-position: 210px 16px;
+margin-top: 20px;
+margin-bottom: 100px;
+}
+
+/* === LAST === */
+li{
+    list-style-type: none;
+}
+.last{
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+.last-item{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.last-item li:nth-child(1){
+    font-weight: 500;
+font-size: 18px;
+line-height: 200%;
+color: #212121;
+}
+.last-item li{
+    font-weight: 300;
+font-size: 16px;
+color: #949494;
+
+}
+.icon{
+    margin-top: 50px;
+    display: flex;
+    gap: 45px;
+}
+
+/* ==== footer  ====*/
+
+footer{
+    width: 100%;
+    background: #008F76;
+}
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items:center;
 }
